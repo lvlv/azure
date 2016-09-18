@@ -101,7 +101,7 @@
             }
         },
         "virtualNetworks_name": {
-            "defaultValue": "",
+            "defaultValue": "tosnetwork",
             "type": "String",
             "metadata": {
                 "description": "虚拟网络名称"
