@@ -4,63 +4,108 @@
     "parameters": {
         "virtualMachines_adminPassword": {
             "defaultValue": null,
-            "type": "SecureString"
+            "type": "SecureString",
+            "metadata": {
+                "description": "新建虚拟机的密码"
+            }
         },
         "availabilitySets_name": {
-            "defaultValue": "",
-            "type": "String"
+            "defaultValue": "toscluster",
+            "type": "String",
+            "metadata": {
+                "description": "集群名称"
+            }
         },
         "virtualMachines_name": {
-            "defaultValue": "",
-            "type": "String"
+            "defaultValue": "tosmachine",
+            "type": "String",
+            "metadata": {
+                "description": "虚拟机机器名"
+            }
         },
         "networkInterfaces_name": {
-            "defaultValue": "",
-            "type": "String"
+            "defaultValue": "eth0",
+            "type": "String",
+            "metadata": {
+                "description": "网卡名"
+            }
         },
         "networkSecurityGroups_name": {
-            "defaultValue": "",
-            "type": "String"
+            "defaultValue": "tosSecurityGroup",
+            "type": "String",
+            "metadata": {
+                "description": "网络安全组名"
+            }
         },
         "publicIPAddresses_name": {
-            "defaultValue": "",
-            "type": "String"
+            "defaultValue": "tosPublicIp",
+            "type": "String",
+            "metadata": {
+                "description": "公开IP名"
+            }
         },
         "publicIPDns_name": {
-            "defaultValue": "",
-            "type": "String"
+            "defaultValue": "tospublicdns",
+            "type": "String",
+            "metadata": {
+                "description": "公开IP的DNS名"
+            }
         },
         "storageAccounts_name": {
-            "defaultValue": "",
-            "type": "String"
+            "defaultValue": "tosStorageAccount",
+            "type": "String",
+            "metadata": {
+                "description": "存储账号名"
+            }
         },
         "image_path": {
-            "defaultValue": "",
-            "type": "String"
+            "defaultValue": "image_path",
+            "type": "String",
+            "metadata": {
+                "description": "虚拟镜像的名称"
+            }
         },
         "vhd_name": {
-            "defaultValue": "",
-            "type": "String"
+            "defaultValue": "https://tostest590.blob.core.chinacloudapi.cn/image/toscluster-tmpl.vhd",
+            "type": "String",
+            "metadata": {
+                "description": "虚拟硬盘的名称"
+            }
         },
         "vm_size": {
-            "defaultValue": "",
-            "type": "String"
+            "defaultValue": "Standard_D2_v2",
+            "type": "String",
+            "metadata": {
+                "description": "虚拟机类型"
+            }
         },
         "custom_data": {
             "defaultValue": "",
-            "type": "String"
+            "type": "String",
+            "metadata": {
+                "description": "高级自定义数据，一般留空"
+            }
         },
         "ssh_use_key_authentication": {
 	    "defaultValue": true,
-            "type": "Bool"
+            "type": "Bool",
+            "metadata": {
+                "description": "是否使用SSHKey认证"
+            }
 	},
         "ssh_key": {
 	    "defaultValue": "",
-            "type": "String"
+            "type": "String",
+            "metadata": {
+                "description": "输入您的SSHKey"
+            }
         },
         "virtualNetworks_name": {
             "defaultValue": "",
-            "type": "String"
+            "type": "String",
+            "metadata": {
+                "description": "虚拟网络名称"
+            }
         }
     },
     "variables": {},
